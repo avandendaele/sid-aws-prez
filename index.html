@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>SID AWS</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/theme-sfeir.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>AWS</h1>
+
+            <h3>Amazon Web Services</h3>
+            <br/>
+
+            <p>
+                <small>By Lesage Pierre-Yves and Vandendaele Alexis</small>
+            </p>
+        </section>
+
+        <section>
+
+            <section>
+                <h2>Architecting on AWS</h2>
+
+                <h1>Feedback</h1>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Amazon's Luxembourg facilities</li>
+                    <li>3 Days training</li>
+                    <li>3 Sfeir employees</li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>IAM</li>
+                    <li class="fragment"><em>S3</em></li>
+                    <li class="fragment"><em>VPC</em></li>
+                    <li class="fragment"><em>EC2</em></li>
+                    <li class="fragment">SQS</li>
+                    <li class="fragment">SNS</li>
+                    <li class="fragment">SWF</li>
+                    <li class="fragment">...</li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section>
+
+            <section>
+                <h1>Regions</h1>
+
+                <h3>and</h3>
+
+                <h1>Availability zones</h1>
+            </section>
+
+            <section>
+                <p>Regions and AZs are a key concepts on AWS.</p>
+                <img class="no-frame" src="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/aws_regions.png">
+                <small>AWS services are available by regions and each region has at least 2 AZs</small>
+            </section>
+
+            <section>
+                <p class="orange">9 Public regions</p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ap-northeast-1</td>
+                        <td>Asia Pacific (Tokyo)</td>
+                    </tr>
+                    <tr>
+                        <td>ap-southeast-1</td>
+                        <td>Asia Pacific (Singapore)</td>
+                    </tr>
+                    <tr>
+                        <td>ap-southeast-2</td>
+                        <td>Asia Pacific (Sydney)</td>
+                    </tr>
+                    <tr>
+                        <td>eu-central-1</td>
+                        <td>EU (Frankfurt)</td>
+                    </tr>
+                    <tr>
+                        <td>eu-west-1</td>
+                        <td>EU (Ireland)</td>
+                    </tr>
+                    <tr>
+                        <td>sa-east-1</td>
+                        <td>South America (Sao Paulo)</td>
+                    </tr>
+                    <tr>
+                        <td>us-east-1</td>
+                        <td>US East (N. Virginia)</td>
+                    </tr>
+                    <tr>
+                        <td>us-west-1</td>
+                        <td>US West (N. California)</td>
+                    </tr>
+                    <tr>
+                        <td>us-west-2</td>
+                        <td>US West (Oregon)</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br/>
+
+                <p>
+                    <small>2 private regions : GovCloud & CIA</small>
+                </p>
+            </section>
+
+        </section>
+        <section>
+            <section>
+                <h3>Simple Storage Service</h3>
+
+                <h1>S3</h1>
+            </section>
+
+            <section>
+                <h2>Demo</h2>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Virtual Private Network</h3>
+
+                <h1>VPC</h1>
+            </section>
+
+            <section>
+                <h2>Demo</h2>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Elastic Compute Cloud</h3>
+
+                <h1>EC2</h1>
+            </section>
+
+            <section>
+                <h2>Demo</h2>
+            </section>
+        </section>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            width: 1024,
+            height: 768,
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                } },
+                { src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                } },
+                { src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+                    return !!document.body.classList;
+                } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () {
+                    return !!document.body.classList;
+                } }
+            ]
+        });
+
+    </script>
+
+</body>
+</html>
