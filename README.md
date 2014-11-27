@@ -1,13 +1,13 @@
-# Scala-Prez 
-The goal of this presentation is to give you a fast overview of [Scala](http://scala-lang.org) and its power.
+# SID AWS Prez
+This presentation has been done for an internal presentation à Sfeir Benelux on AWS.
 
 ## Requirements
 * [NodeJS](http://nodejs.org/)
 * [Grunt](http://gruntjs.com/getting-started)
 
 ```
-$ git clone git@github.com:avandendaele/scala-prez.git
-$ cd scala-prez
+$ git clone git@github.com:avandendaele/sid-aws-prez.git
+$ cd sid-aws-prez
 $ npm update
 $ grunt serve
 ```
